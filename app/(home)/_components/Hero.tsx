@@ -1,7 +1,7 @@
 import Image from "next/image";
 import hero from "../../../public//hero.png";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 export function Hero() {
   return (
@@ -15,7 +15,7 @@ export function Hero() {
             <h1 className="text-h1 font-bold text-surface">
               Know the property.
               <br />
-              Move with <span className="text-primary">clarity.</span>
+             <span className="italic"> Move with <span className="text-primary">clarity.</span> </span>
             </h1>
 
             <p className="max-w-md text-body text-text">
@@ -28,7 +28,7 @@ export function Hero() {
           <div className="flex items-center gap-4">
             <Button>
               <span>Start a search</span>
-              <ArrowRight size={10} />
+              <ChevronRight size={16} />
             </Button>
             <Button variant="outline">Track an existing search</Button>
           </div>
