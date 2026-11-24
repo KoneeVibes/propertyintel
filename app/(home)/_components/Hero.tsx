@@ -5,17 +5,20 @@ import { ChevronRight } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className=" pl-22 grid grid-cols-1 lg:grid-cols-2  items-center gap-8">
-      <div className="flex flex-col gap-30">
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col gap-8 ">
+    <section className="grid grid-cols-1 items-center gap-8 px-5 py-8 sm:px-8 lg:grid-cols-2 lg:py-0 lg:pl-22 lg:pr-0">
+      <div className="flex flex-col gap-10 lg:gap-30">
+        <div className="flex flex-col gap-8 lg:gap-10">
+          <div className="flex flex-col gap-6  lg:gap-8 ">
             <div className="text-[#2783FC] bg-tint rounded-sm py-2 px-1 w-50 text-center font-semibold text-meta">
               Propery due diligence in Nigeria
             </div>
             <h1 className="text-h1 font-bold text-surface">
               Know the property.
               <br />
-             <span className="italic"> Move with <span className="text-primary">clarity.</span> </span>
+              <span className="italic">
+                {" "}
+                Move with <span className="text-primary">clarity.</span>{" "}
+              </span>
             </h1>
 
             <p className="max-w-md text-body text-text">
@@ -25,7 +28,7 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4">
             <Button>
               <span>Start a search</span>
               <ChevronRight size={16} />
@@ -45,7 +48,7 @@ export function Hero() {
           src={hero}
           alt="Hero image"
           priority
-          className="h-full w-full  object-cover"
+          className="h-full w-full  object-cover rounded-xl lg:rounded-none"
         />
       </div>
     </section>

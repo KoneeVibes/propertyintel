@@ -25,7 +25,7 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section className="px-22 mt-25 mb-15">
+    <section className="px-5 py-8 sm:px-8 lg:px-22 mt-15 lg:mt-25 mb-15">
       <div className="grid grid-cols-1 gap-10 md:grid-cols-[4fr_6fr]">
         <div>
           <p className="text-meta font-bold uppercase text-[#B1B1B1]">

@@ -10,7 +10,7 @@ export function FinalCTA() {
       <h1 className="text-h1 font-semibold text-surface max-w-250 text-center">
         Make your next property decision with a clearer picture.
       </h1>
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col md:flex-row items-center gap-4">
         <Button>
           <span>Start a search</span>
           <ChevronRight size={16} />

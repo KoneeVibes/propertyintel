@@ -25,8 +25,11 @@ export function HowItWorks() {
     },
   ];
   return (
-    <section className="bg-tint p-22 mt-10" id="howItWorks">
-      <div className="grid grid-cols-2">
+    <section
+      className="bg-tint px-5 py-8 sm:px-8 lg:p-22 mt-10"
+      id="howItWorks"
+    >
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 ">
         <div>
           <p className="text-[#B1B1B1] text-small font-bold">THE PROCESS</p>
           <h2 className="text-h2 text-surface font-bold my-6 max-w-md">
@@ -50,7 +53,7 @@ export function HowItWorks() {
               <h3 className={`text-h3 font-bold text-black`}>{p.title}</h3>
 
               <p className="max-w-md mb-2">{p.content}</p>
-              <div className="border-[#BECAD8] border w-150" />
+              <div className="border-[#BECAD8] border max-w-150" />
             </div>
           ))}
         </div>

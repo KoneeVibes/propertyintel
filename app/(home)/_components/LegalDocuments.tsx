@@ -13,14 +13,17 @@ export function LegalDocuments() {
     { label: "Other property documents" },
   ];
   return (
-    <section className="px-22 mt-18 mb-10" id="legalDocuments">
-      <div className="grid grid-cols-1 gap-25 md:grid-cols-[4fr_6fr]">
-        <div className="relative min-h-80 overflow-hidden rounded-xl">
+    <section
+      className="px-5 py-8 mt-10 mb-6 sm:px-8 lg:px-22 lg:mt-18 lg:mb-10"
+      id="legalDocuments"
+    >
+      <div className="grid grid-cols-1 gap-13 lg:gap-25 lg:grid-cols-[4fr_6fr]">
+        <div className="relative min-h-72 sm:min-h-96 lg:min-h-80 overflow-hidden rounded-xl">
           <Image
             src={legal}
             alt=""
             fill
-            sizes="(min-width: 768px) 45vw, 100vw"
+            sizes="(min-width: 1024px) 45vw, 100vw"
             className="object-cover"
           />
         </div>
@@ -42,7 +45,7 @@ export function LegalDocuments() {
             {docs.map((d) => (
               <div
                 key={d.label}
-                className="flex items-center justify-center rounded-xl bg-primary/25 py-3 px-12"
+                className="flex items-center justify-center rounded-xl bg-primary/25 py-3 px-4 sm:px-8 lg:px-12"
               >
                 <span className="text-primary font-bold">{d.label}</span>
               </div>

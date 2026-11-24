@@ -33,7 +33,7 @@ export function Services() {
     },
   ];
   return (
-    <section className="px-22 py-20">
+    <section className="px-5 py-8 sm:px-8 lg:p-22">
       <div className="mb-4">
         <h2 className="text-h2 text-surface font-bold">One Place to Move</h2>
         <h2 className="text-h2 text-surface font-bold italic">

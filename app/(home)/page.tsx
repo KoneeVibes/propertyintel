@@ -7,18 +7,17 @@ import { FAQ } from "./_components/FAQ";
 import { FinalCTA } from "./_components/FinalCTA";
 import { Footer } from "@/components/layout/Footer";
 
-
 export default function Home() {
   return (
-   <main>
-    <Navbar />
-    <Hero />
-    <Services />
-    <HowItWorks />
-    <LegalDocuments />
-    <FAQ />
-    <FinalCTA />
-    <Footer />
-   </main>
+    <main>
+      <Navbar />
+      <Hero />
+      <Services />
+      <HowItWorks />
+      <LegalDocuments />
+      <FAQ />
+      <FinalCTA />
+      <Footer />
+    </main>
   );
 }
