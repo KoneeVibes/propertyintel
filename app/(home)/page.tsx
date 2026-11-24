@@ -4,6 +4,8 @@ import { Services } from "./_components/Services";
 import { HowItWorks } from "./_components/HowItWorks";
 import { LegalDocuments } from "./_components/LegalDocuments";
 import { FAQ } from "./_components/FAQ";
+import { FinalCTA } from "./_components/FinalCTA";
+import { Footer } from "@/components/layout/Footer";
 
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
     <HowItWorks />
     <LegalDocuments />
     <FAQ />
+    <FinalCTA />
+    <Footer />
    </main>
   );
 }
