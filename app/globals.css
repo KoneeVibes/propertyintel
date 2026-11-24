@@ -9,6 +9,7 @@
   --accent: #002fd0;
   --accent-contrast: #ffffff;
   --primary: #3f92ff;
+  --secondary: #150089;
   --tint: #ebf4ff;
 }
 
@@ -21,6 +22,7 @@
   --color-accent: var(--accent);
   --color-accent-contrast: var(--accent-contrast);
   --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
   --color-tint: var(--tint);
 
   --font-sans: var(--font-inter), sans-serif, ui-sans-serif, system-ui;

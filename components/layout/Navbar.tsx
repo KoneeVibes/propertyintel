@@ -9,7 +9,8 @@ import { X, Menu } from "lucide-react";
 const navItems = [
   { label: "Why PropertyIntel", href: "#whyPropertyIntel" },
   { label: "How it works", href: "#howItWorks" },
-  { label: "Legal documents", href: "#legalDocuments" },
+  { label: "Legal consultancy", href: "#legalConsultancy" },
+  { label: "Contact Us", href: "#contact" },
   { label: "Track a search", href: "#trackSearch" },
 ];
 
@@ -30,7 +31,7 @@ export function Navbar() {
 
   return (
     <header className="relative top-0 z-40 border-b border-border  py-3 px-5 sm:px-8 lg:px-22">
-      <div className="flex items-center  justify-between lg:justify-start lg:gap-50">
+      <div className="flex items-center justify-between lg:justify-start lg:gap-30">
         <div className="shrink-0">
           <Image src={logo} alt="Property intel logo" />
         </div>
@@ -46,7 +47,7 @@ export function Navbar() {
               </a>
             ))}
           </nav>
-          <Button className="hidden lg:inline-flex">Start a Search</Button>
+          <Button className="hidden lg:inline-flex bg-secondary hover:bg-[#1c0fa8]">Start a Search</Button>
         </div>
 
         <button
@@ -94,7 +95,7 @@ export function Navbar() {
           ))}
         </nav>
 
-        <Button className="mt-auto w-full" onClick={() => setOpen(false)}>
+        <Button className="mt-auto w-full bg-secondary hover:bg-[#1c0fa8]" onClick={() => setOpen(false)}>
           Start a Search
         </Button>
       </aside>

@@ -26,9 +26,9 @@ export function Services() {
     {
       id: 3,
       icon: doc,
-      title: "Prepare legal documents",
+      title: "Get legal guidance",
       content:
-        "When you need transaction paperwork, request drafting assistance from the legal team and review a draft before final delivery.",
+        "Speak with Capstone about your findings and the legal steps that may come next for your property transaction.",
       textLink: "Explore documents",
     },
   ];

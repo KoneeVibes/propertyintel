@@ -9,17 +9,17 @@ const faqs = [
   {
     question: "What documents should I upload?",
     answer:
-      "Upload any property documents you have, such as a survey plan, title document, deed of assignment, or contract of sale. If you're not sure what applies, submit what you have and the team will tell you what else is needed.",
+      "A survey plan and any available title documents are useful. You can submit the information you have when starting the request.",
   },
   {
     question: "How will I get the report?",
     answer:
-      "Once the review is complete, your due diligence report is delivered to the email you provided. You can also use your email or request ID on the Track a search page to follow progress.",
+      "When the report is ready, we’ll notify you and provide a secure download link.",
   },
   {
-    question: "Can I request legal documents too?",
+    question: "Can I get legal guidance afterward?",
     answer:
-      "Yes. After submitting a verification request or receiving your report, you can ask for legal documentation assistance. You'll provide the transaction details, review a draft, and receive the final document when it's ready.",
+      "Yes. Contact Capstone to discuss your property or report findings and get advice on the legal steps that may come next.",
   },
 ];
 

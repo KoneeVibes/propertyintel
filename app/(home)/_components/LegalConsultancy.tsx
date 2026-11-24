@@ -3,19 +3,16 @@ import legal from "../../../public/legal.png";
 import { Button } from "@/components/ui/Button";
 import { ChevronRight } from "lucide-react";
 
-export function LegalDocuments() {
+export function LegalConsultancy() {
   const docs = [
-    { label: "Contact of Sale" },
-    { label: "Deed of Assignment" },
-    { label: "Power of Attorney" },
-    { label: "Lease or Tenancy Agreement" },
-    { label: "Deed of Gift" },
-    { label: "Other property documents" },
+    { label: "Discuss your findings" },
+    { label: "Understand your options" },
+    { label: "Plan the next step" },
   ];
   return (
     <section
       className="px-5 py-8 mt-10 mb-6 sm:px-8 lg:px-22 lg:mt-18 lg:mb-10"
-      id="legalDocuments"
+      id="legalConsultancy"
     >
       <div className="grid grid-cols-1 gap-13 lg:gap-25 lg:grid-cols-[4fr_6fr]">
         <div className="relative min-h-72 sm:min-h-96 lg:min-h-80 overflow-hidden rounded-xl">
@@ -32,14 +29,16 @@ export function LegalDocuments() {
           <p className="text-[#B1B1B1] text-small font-bold uppercase">
             beyond the report
           </p>
-          <h2 className="text-h2 text-surface font-bold">
-            The right documents for what comes next.
+          <h2 className="text-h2 text-secondary font-bold">
+            Understand your options.
+            <span className="text-primary"> Know your next step.</span>
           </h2>
+
           <p className="max-w-md">
-            After submitting a verification request or receiving your report,
-            you can ask for legal documentation assistance. Provide the
-            transaction details, review a draft, and receive the final document
-            when it is ready.
+            Have questions about a property or the findings in your report?
+            Reach out to Capstone for a legal consultation. Our team can discuss
+            your situation, advise you on how to move forward, and explain what
+            documents or other steps may be needed for your transaction.
           </p>
           <div className="flex items-center gap-2 flex-wrap max-w-200">
             {docs.map((d) => (
@@ -53,13 +52,11 @@ export function LegalDocuments() {
           </div>
 
           <p className="text-[#767676] max-w-md text-small">
-            The team can also help with memoranda of understanding, land sale
-            agreements, property management agreements, and custom property
-            documents.
+            You can contact us after submitting a search or once you have received your report.
           </p>
 
           <Button className="font-medium w-65">
-            <span>Start a search</span>
+            <span>Contact Capstone</span>
             <ChevronRight size={16} />
           </Button>
         </div>

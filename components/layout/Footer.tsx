@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-20">
           <div className="flex flex-col gap-4">
             <Image src={logo} alt="" />
-            <p className="text-bg/30 max-w-72">Property due diligence and legal documentation assistance in Nigeria.</p>
+            <p className="text-bg/30 max-w-72">Property due diligence and legal guidance in Nigeria.</p>
           </div>
 
           <div className="flex flex-col gap-4">
@@ -16,14 +16,14 @@ export function Footer() {
             <div className="flex flex-col gap-2">
               <a href="" className="text-bg/30">Start a search</a>
               <a href="" className="text-bg/30">Track a search</a>
-              <a href="#legalDocuments" className="text-bg/30">Legal documents</a>
+              <a href="" className="text-bg/30">Further consultancy</a>
             </div>
           </div>
 
           <div className="flex flex-col gap-4">
              <p className="text-bg">Contact</p>
              <div className="flex flex-col gap-4">
-              <p className="text-bg/30">info@capstoneglobalhq.com</p>
+              <p className="text-bg/30">info@propertyIntel.ng</p>
                <p className="text-bg/30">Abuja, Nigeria</p>
              </div>
           </div>
