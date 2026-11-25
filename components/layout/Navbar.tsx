@@ -10,7 +10,7 @@ const navItems = [
   { label: "Why PropertyIntel", href: "#whyPropertyIntel" },
   { label: "How it works", href: "#howItWorks" },
   { label: "Legal consultancy", href: "#legalConsultancy" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Contact Us", href: "/contact" },
   { label: "Track a search", href: "#trackSearch" },
 ];
 

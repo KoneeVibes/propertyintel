@@ -26,6 +26,7 @@
   --color-tint: var(--tint);
 
   --font-sans: var(--font-inter), sans-serif, ui-sans-serif, system-ui;
+  --font-plus: var(--font-plus-sans);
 
   --text-display: clamp(2.5rem, 1.5rem + 4vw, 4rem);
   --text-display--line-height: 1.02;
@@ -94,6 +95,8 @@
   transform-origin: left;
 }
 
+
+
 @utility container-site {
   width: 100%;
   max-width: var(--container-site);
@@ -124,8 +127,4 @@
     background-size: 100% 1px;
     background-position: 0% 100%;
   }
-}
-
-@utility hairline {
-  border-color: var(--border);
 }
