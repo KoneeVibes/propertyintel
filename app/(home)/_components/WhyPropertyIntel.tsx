@@ -7,6 +7,7 @@ export function WhyPropertyIntel() {
   return (
     <section className="px-5 py-8 sm:px-8 lg:px-22 lg:py-16" id="whyPropertyIntel">
       <div className="relative mx-auto max-w-475 overflow-hidden rounded-[28px] bg-[#0A7CFF]">
+           <div className="absolute inset-x-0 top-0 h-70 sm:h-80 lg:inset-0 lg:h-auto">
         <Image
           src={ideaBanner}
           alt=""
@@ -15,11 +16,12 @@ export function WhyPropertyIntel() {
           sizes="(min-width: 1100px) 1100px, 100vw"
           className="h-70 w-full object-cover object-left md:h-auto"
         />
+        </div>
 
-        <div className="relative z-10 grid min-h-105 items-center md:min-h-88 md:grid-cols-[0.9fr_1.1fr]">
+        <div className="relative z-10 grid items-center lg:min-h-88 lg:grid-cols-[0.9fr_1.1fr]">
           <div aria-hidden className="hidden md:block" />
 
-          <div className="px-6 pb-10 pt-75 sm:px-10 md:py-12 md:pl-0 md:pr-14">
+          <div className="px-6 pb-10 pt-85 sm:px-10 lg:py-12 lg:pl-0 lg:pr-14">
             <p className="text-small font-bold tracking-wide text-bg/40">
               THE IDEA
             </p>
