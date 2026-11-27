@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import {  ButtonLink } from "@/components/ui/Button";
 import { ChevronRight } from "lucide-react";
 
 export function HowItWorks() {
@@ -41,10 +41,10 @@ export function HowItWorks() {
             as our team works through it.
           </p>
 
-          <Button className="mt-10 font-medium px-13">
+          <ButtonLink href="/search" className="mt-10 font-medium px-13">
             <span>Start a search</span>
             <ChevronRight size={16} />
-          </Button>
+          </ButtonLink>
         </div>
 
         <div>

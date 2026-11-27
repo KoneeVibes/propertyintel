@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "../../public/logo-tranparent.png";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -14,9 +15,9 @@ export function Footer() {
             <p className="text-bg">Explore</p>
 
             <div className="flex flex-col gap-2">
-              <a href="" className="text-bg/30">Start a search</a>
-              <a href="" className="text-bg/30">Track a search</a>
-              <a href="" className="text-bg/30">Further consultancy</a>
+              <Link href="/search" className="text-bg/30">Start a search</Link>
+              <Link href="/track" className="text-bg/30">Track a search</Link>
+              <Link href="/" className="text-bg/30">Further consultancy</Link>
             </div>
           </div>
 

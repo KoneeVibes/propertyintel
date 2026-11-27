@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import ideaBanner from "../../../public/idea-banner.png";
-import { Button } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/Button";
 
 export function WhyPropertyIntel() {
   return (
@@ -39,10 +39,10 @@ export function WhyPropertyIntel() {
               review the findings before your next move.
             </p>
 
-            <Button className="bg-secondary rounded-xl py-6 px-10 mt-5 font-medium transition hover:bg-[#1c0fa8]">
+            <ButtonLink href="/search" className="bg-secondary rounded-xl py-6 px-10 mt-5 font-medium transition hover:bg-[#1c0fa8]">
               <span>Start a search</span>
               <ChevronRight size={16} />
-            </Button>
+            </ButtonLink>
           </div>
         </div>
       </div>

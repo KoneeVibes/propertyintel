@@ -1,6 +1,6 @@
 import Image from "next/image";
 import legal from "../../../public/legal.png";
-import { Button } from "@/components/ui/Button";
+import {  ButtonLink } from "@/components/ui/Button";
 import { ChevronRight } from "lucide-react";
 
 export function LegalConsultancy() {
@@ -55,10 +55,10 @@ export function LegalConsultancy() {
             You can contact us after submitting a search or once you have received your report.
           </p>
 
-          <Button className="font-medium w-65">
+          <ButtonLink href="/contact" className="font-medium w-65">
             <span>Contact Capstone</span>
             <ChevronRight size={16} />
-          </Button>
+          </ButtonLink>
         </div>
       </div>
     </section>

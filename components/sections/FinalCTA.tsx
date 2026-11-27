@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/Button";
 import { ChevronRight } from "lucide-react";
 
 export function FinalCTA() {
@@ -11,11 +11,13 @@ export function FinalCTA() {
         Make your next property decision with a clearer picture.
       </h1>
       <div className="flex flex-col md:flex-row items-center gap-4">
-        <Button className="bg-secondary hover:bg-[#1c0fa8]">
+        <ButtonLink href="/search" className="bg-secondary hover:bg-[#1c0fa8]">
           <span>Start a search</span>
           <ChevronRight size={16} />
-        </Button>
-        <Button variant="outline">Track an existing search</Button>
+        </ButtonLink>
+        <ButtonLink href="/track" variant="outline">
+          Track an existing search
+        </ButtonLink>
       </div>
     </section>
   );

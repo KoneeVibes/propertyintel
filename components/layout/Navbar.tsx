@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import logo from "../../public/logo.png";
-import { Button } from "../ui/Button";
+import { ButtonLink } from "../ui/Button";
 import { useState, useEffect } from "react";
 import { X, Menu } from "lucide-react";
+
 
 const navItems = [
   { label: "Why PropertyIntel", href: "/#whyPropertyIntel" },
@@ -14,7 +15,14 @@ const navItems = [
   { label: "Track a search", href: "#trackSearch" },
 ];
 
-export function Navbar() {
+type NavItem = {label: string, href: string};
+
+type NavbarProps = {
+  items: NavItem[];
+  cta: NavItem;
+}
+
+export function Navbar({items, cta}: NavbarProps) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -37,7 +45,7 @@ export function Navbar() {
         </div>
         <div className="hidden lg:flex items-center gap-30">
           <nav className="flex items-center gap-12">
-            {navItems.map((item) => (
+            {items.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
@@ -47,7 +55,7 @@ export function Navbar() {
               </a>
             ))}
           </nav>
-          <Button className="hidden lg:inline-flex bg-secondary hover:bg-[#1c0fa8]">Start a Search</Button>
+          <ButtonLink href={cta.href} className="hidden lg:inline-flex bg-secondary hover:bg-[#1c0fa8]">{cta.label}</ButtonLink>
         </div>
 
         <button
@@ -95,9 +103,9 @@ export function Navbar() {
           ))}
         </nav>
 
-        <Button className="mt-auto w-full bg-secondary hover:bg-[#1c0fa8]" onClick={() => setOpen(false)}>
-          Start a Search
-        </Button>
+        <ButtonLink href={cta.href} className="mt-auto w-full bg-secondary hover:bg-[#1c0fa8]" onClick={() => setOpen(false)}>
+          {cta.label}
+        </ButtonLink>
       </aside>
     </header>
   );

@@ -1,5 +1,6 @@
 import { ComponentProps } from "react";
 import { extendTailwindMerge } from "tailwind-merge";
+import Link from "next/link";
 
 const twMerge = extendTailwindMerge({
   extend: {
@@ -52,3 +53,13 @@ export function Button({
 
 
 
+export function ButtonLink({
+  variant,
+  size,
+  className,
+  ...props
+}: ButtonProps & ComponentProps<typeof Link>) {
+  return (
+    <Link className={buttonStyles({ variant, size, className })} {...props} />
+  );
+}

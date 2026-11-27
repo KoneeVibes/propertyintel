@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/Button";
 import tracker from "../../../public/tracker.png";
 
 export function TrackBanner() {
@@ -33,10 +33,10 @@ export function TrackBanner() {
             search.
           </p>
 
-          <Button className="mt-7 rounded-lg bg-secondary px-6 py-3  font-medium transition hover:bg-[#1c0fa8] ">
+          <ButtonLink href="/track"  className="mt-7 rounded-lg bg-secondary px-6 py-3  font-medium transition hover:bg-[#1c0fa8] ">
             <span>Track a search</span>
             <ChevronRight size={16} />
-          </Button>
+          </ButtonLink>
         </div>
       </div>
     </section>

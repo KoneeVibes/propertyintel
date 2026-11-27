@@ -1,6 +1,6 @@
 import Image from "next/image";
 import hero from "../../../public//hero.png";
-import { Button } from "@/components/ui/Button";
+import { Button, ButtonLink } from "@/components/ui/Button";
 import { ChevronRight } from "lucide-react";
 
 export function Hero() {
@@ -29,10 +29,10 @@ export function Hero() {
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
-            <Button>
+            <ButtonLink href="/search">
               <span>Start a search</span>
               <ChevronRight size={16} />
-            </Button>
+            </ButtonLink>
             <Button variant="outline">Track an existing search</Button>
           </div>
         </div>

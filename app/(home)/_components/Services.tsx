@@ -14,6 +14,7 @@ export function Services() {
       content:
         "Share the location, property type, title details, and any documents you have. We’ll review the information and carry out the requested due diligence.",
       textLink: "Search a property",
+      href: "/search"
     },
     {
       id: 2,
@@ -22,6 +23,7 @@ export function Services() {
       content:
         "Use your email or request ID to see your current stage, from request received through review, due diligence, and report ready.",
       textLink: "Track a search",
+      href: "/track"
     },
     {
       id: 3,
@@ -30,6 +32,7 @@ export function Services() {
       content:
         "Speak with Capstone about your findings and the legal steps that may come next for your property transaction.",
       textLink: "Explore documents",
+      href:"/explore"
     },
   ];
   return (
@@ -73,7 +76,7 @@ export function Services() {
             </p>
 
             <Link
-              href="/"
+              href={sr.href}
               className={`font-medium flex items-center gap-2 ${sr.id == 2 ? "text-tint" : "text-primary"}`}
             >
               <span>{sr.textLink}</span>
